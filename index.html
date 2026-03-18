@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Typing Speed Test Online - No Login Required | freetypingtest.app</title>
+<meta name="description" content="Free online typing speed test. Measure WPM, accuracy, and consistency. Multiple modes, detailed stats. No login, no tracking. freetypingtest.app">
+<meta name="theme-color" content="#C49A2A">
+<meta property="og:title" content="Free Typing Speed Test Online | freetypingtest.app">
+<meta property="og:description" content="Free online typing speed test. Measure WPM, accuracy, and consistency. Multiple modes, detailed stats. No login, no tracking.">
+<meta property="og:image" content="/og-image.svg">
+<meta property="og:url" content="https://freetypingtest.app">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://freetypingtest.app">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "freetypingtest.app",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Free online typing speed test. Measure WPM, accuracy, and consistency. Multiple modes, detailed stats. No login, no tracking.",
+  "url": "https://freetypingtest.app"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is freetypingtest.app really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, freetypingtest.app is completely free to use. There are no hidden charges, no premium tiers required for basic features, and no account creation needed. All core typing test features including all five text modes, all durations, personal best tracking, and test history are available at no cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good typing speed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The average typing speed is around 40 WPM. A speed of 60-80 WPM is considered above average and sufficient for most professional work. Speeds above 80 WPM are considered fast, and professional typists often reach 100+ WPM. The world record for typing speed is over 200 WPM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is WPM calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WPM (Words Per Minute) is calculated using the standard formula where every 5 characters count as one word. Gross WPM equals total characters typed divided by 5, divided by minutes elapsed. Net WPM subtracts errors from the gross WPM to give your effective typing speed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I practice typing code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! freetypingtest.app includes a dedicated Code mode featuring programming snippets in JavaScript, Python, CSS, HTML, and SQL. This mode includes common syntax like brackets, semicolons, arrow functions, and other programming characters to help developers improve their coding speed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does freetypingtest.app save my results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, your results are saved locally in your browser using localStorage. This includes your personal best scores per duration and mode, and a history of your last 50 tests. No data is ever sent to any server — everything stays on your device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use freetypingtest.app on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While freetypingtest.app is mobile responsive and works on phones and tablets, typing tests are inherently designed for physical keyboards. For the best and most accurate experience, we recommend using a desktop or laptop computer with a physical keyboard."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://freetypingtest.app" }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <span class="brand">freetypingtest.app</span>
+    </div>
+    <div class="header-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="btn btn-secondary btn-sm" id="historyBtn">History</button>
+      <div class="font-size-selector">
+        <select id="fontSizeSelect" aria-label="Font size">
+          <option value="18">18px</option>
+          <option value="24" selected>24px</option>
+          <option value="30">30px</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main App -->
+<main class="main-app" id="mainApp">
+  <!-- Test Screen -->
+  <div class="test-screen" id="testScreen">
+    <!-- Settings Bar -->
+    <div class="settings-bar">
+      <div class="settings-row">
+        <div class="segmented-control" id="durationControl" data-setting="duration">
+          <button class="seg-btn" data-value="15">15s</button>
+          <button class="seg-btn" data-value="30">30s</button>
+          <button class="seg-btn active" data-value="60">60s</button>
+          <button class="seg-btn" data-value="120">120s</button>
+        </div>
+        <div class="segmented-control" id="modeControl" data-setting="mode">
+          <button class="seg-btn active" data-value="words">Words</button>
+          <button class="seg-btn" data-value="quotes">Quotes</button>
+          <button class="seg-btn" data-value="code">Code</button>
+          <button class="seg-btn" data-value="numbers">Numbers</button>
+          <button class="seg-btn" data-value="custom">Custom</button>
+        </div>
+        <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
+          <svg class="icon-sound-off" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+          <svg class="icon-sound-on" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Custom Text Input -->
+    <div class="custom-text-area" id="customTextArea" style="display:none">
+      <textarea id="customTextInput" placeholder="Paste or type your custom text here..." rows="4"></textarea>
+      <button class="btn btn-primary btn-sm" id="customStartBtn">Start with Custom Text</button>
+    </div>
+
+    <!-- Typing Area -->
+    <div class="typing-container" id="typingContainer">
+      <div class="typing-area" id="typingArea" tabindex="0">
+        <div class="text-display" id="textDisplay"></div>
+        <div class="focus-hint" id="focusHint">Click here or start typing</div>
+      </div>
+      <input type="text" id="hiddenInput" class="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </div>
+
+    <!-- Start Prompt -->
+    <div class="start-prompt" id="startPrompt">Start typing to begin the test</div>
+
+    <!-- Live Stats -->
+    <div class="live-stats" id="liveStats">
+      <div class="live-stat">
+        <span class="live-stat-value" id="liveWpm">0</span>
+        <span class="live-stat-label">WPM</span>
+      </div>
+      <div class="live-stat">
+        <span class="live-stat-value" id="liveAccuracy">100</span>
+        <span class="live-stat-label">Accuracy</span>
+      </div>
+      <div class="live-stat">
+        <span class="live-stat-value" id="liveTimer">60</span>
+        <span class="live-stat-label">Time</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Screen -->
+  <div class="results-screen" id="resultsScreen" style="display:none">
+    <div class="results-inner">
+      <div class="results-main">
+        <span class="results-wpm" id="resultsWpm">0</span>
+        <span class="results-wpm-label">words per minute</span>
+      </div>
+      <div class="personal-best-indicator" id="personalBestIndicator" style="display:none"></div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-value" id="resultNetWpm">0</span>
+          <span class="stat-label">Net WPM</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="resultAccuracy">0%</span>
+          <span class="stat-label">Accuracy</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="resultCorrect">0</span>
+          <span class="stat-label">Correct</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="resultIncorrect">0</span>
+          <span class="stat-label">Incorrect</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="resultConsistency">0%</span>
+          <span class="stat-label">Consistency</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="resultDurationMode">60s · Words</span>
+          <span class="stat-label">Duration · Mode</span>
+        </div>
+      </div>
+      <div class="chart-container">
+        <div class="chart-title">WPM Over Time</div>
+        <svg id="wpmChart" class="wpm-chart" viewBox="0 0 600 200"></svg>
+      </div>
+      <div id="upgrade-prompt" class="upgrade-prompt">
+        <div class="upgrade-title">&#128274; Advanced Typing Analytics</div>
+        <div class="upgrade-desc">Track your progress over time with detailed charts, per-key heatmaps, speed curves, and personalized practice lessons</div>
+        <a class="upgrade-link" href="https://freesuite.app" target="_blank" rel="noopener">Unlock with freesuite.app · $2.88/mo</a>
+      </div>
+      <div class="results-actions">
+        <button class="btn btn-primary" id="restartBtn">Restart</button>
+        <button class="btn btn-secondary" id="shareBtn">Share Result</button>
+        <button class="btn btn-secondary" id="viewHistoryBtn">View History</button>
+      </div>
+      <div class="restart-hint">Press Tab + Enter to restart</div>
+    </div>
+  </div>
+</main>
+
+<!-- History Drawer -->
+<div class="history-overlay" id="historyOverlay"></div>
+<div class="history-drawer" id="historyDrawer">
+  <div class="drawer-header">
+    <h2 class="drawer-title">History</h2>
+    <button class="drawer-close" id="drawerClose" aria-label="Close">&times;</button>
+  </div>
+  <div class="drawer-tabs">
+    <button class="drawer-tab active" data-tab="history">History</button>
+    <button class="drawer-tab" data-tab="stats">Statistics</button>
+  </div>
+  <div class="drawer-content">
+    <div class="drawer-panel" id="historyPanel">
+      <div class="summary-stats" id="summaryStats"></div>
+      <div class="history-list" id="historyList"></div>
+      <button class="btn btn-secondary btn-sm clear-history-btn" id="clearHistoryBtn">Clear History</button>
+    </div>
+    <div class="drawer-panel" id="statsPanel" style="display:none">
+      <div class="stats-dashboard" id="statsDashboard"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Banner -->
+<div class="mobile-banner" id="mobileBanner" style="display:none">
+  <span>For the best experience, use a physical keyboard</span>
+  <button class="mobile-banner-close" id="mobileBannerClose">&times;</button>
+</div>
+
+<!-- Toast -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-left" id="footerBest">Personal best: — WPM</span>
+    <span class="footer-right">Tab + Enter to restart</span>
+  </div>
+</footer>
+
+<!-- Suite Badge -->
+<a class="suite-badge" href="https://freesuite.app" target="_blank" rel="noopener">by freesuite.app</a>
+
+<!-- SEO Content -->
+<section class="seo-content">
+  <div class="seo-inner">
+    <h1>Free Typing Speed Test Online — No Login Required</h1>
+    <p>freetypingtest.app is a free online typing speed test that measures your words per minute, accuracy, and consistency directly in your browser with no login, no account, and no data sent to any server. Choose from multiple test modes including common words, famous quotes, programming code, and numbers. freetypingtest.app supports test durations from 15 seconds to 2 minutes, tracks your personal best, and shows a detailed WPM-over-time graph after each test. Your typing history and statistics are stored locally in your browser. Whether you are a student looking to improve your typing skills, a professional aiming for faster data entry, or a developer wanting to type code more efficiently, freetypingtest.app provides a clean, distraction-free environment for practice. The interface is designed to feel natural and responsive, with real-time character-by-character feedback so you can instantly see what you typed correctly and where you made mistakes. No ads, no popups, no account walls — just a fast, beautiful typing test that respects your time and privacy.</p>
+
+    <h2>What features does freetypingtest.app offer?</h2>
+    <ul>
+      <li><strong>5 text modes</strong> including code snippets and custom text — practice with common words, famous quotes, programming syntax, numbers, or your own text</li>
+      <li><strong>Flexible test durations</strong> from 15 seconds to 2 minutes — choose a quick sprint or a sustained endurance test</li>
+      <li><strong>Real-time WPM and accuracy display</strong> — see your speed and precision update live as you type</li>
+      <li><strong>WPM-over-time performance graph</strong> — visualize how your speed changed throughout the test</li>
+      <li><strong>Personal best tracking and test history</strong> for your last 50 tests — monitor your improvement over time</li>
+      <li><strong>Character-by-character accuracy feedback</strong> — instantly see correct, incorrect, and missed characters with color-coded highlighting</li>
+    </ul>
+
+    <h2>How does this free typing test work?</h2>
+    <ol>
+      <li><strong>Open the site</strong> — Visit freetypingtest.app in any modern browser. Select your preferred test duration and text mode from the settings bar. No account or download required.</li>
+      <li><strong>Start typing</strong> — The test begins automatically on your first keypress. Type the displayed text as quickly and accurately as you can. Watch your WPM and accuracy update in real time.</li>
+      <li><strong>View your results</strong> — When the timer runs out, see your complete results including gross and net WPM, accuracy percentage, consistency score, and a WPM-over-time graph showing your performance throughout the test.</li>
+    </ol>
+
+    <h2>Why is freetypingtest.app better than other typing tests?</h2>
+    <p>Most typing test websites are cluttered with advertisements, require account creation, or use outdated interfaces that slow you down before you even start typing. freetypingtest.app takes a different approach — the entire application loads instantly as a single page with no external dependencies, no server requests, and no distractions.</p>
+    <p>The clean, minimal interface is designed specifically for the typing experience. The monospace font is carefully chosen for readability, character-by-character feedback is instantaneous, and the color scheme reduces eye strain during extended practice sessions. Dark mode is built in and remembers your preference.</p>
+    <p>Unlike most typing tests, freetypingtest.app includes a dedicated Code mode with real programming snippets in JavaScript, Python, CSS, HTML, and SQL. This makes it invaluable for developers who want to improve their speed with brackets, semicolons, and other programming characters that standard typing tests ignore.</p>
+    <p>The detailed analytics — including a WPM-over-time graph and consistency score — give you actionable insight into your typing patterns. You can see exactly when you speed up or slow down, helping you identify areas for improvement.</p>
+
+    <h2>Is freetypingtest.app private and safe to use?</h2>
+    <p>Absolutely. freetypingtest.app runs entirely in your browser. No data is sent to any server, no cookies are used for tracking, and no analytics scripts are loaded. Your test results, personal bests, and preferences are stored exclusively in your browser's localStorage. If you clear your browser data, your history is gone — because it was never anywhere else. This makes freetypingtest.app one of the most privacy-respecting typing tests available.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Is freetypingtest.app really free?</h3>
+        <p>Yes, freetypingtest.app is completely free to use. There are no hidden charges, no premium tiers required for basic features, and no account creation needed. All core typing test features including all five text modes, all durations, personal best tracking, and test history are available at no cost.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is a good typing speed?</h3>
+        <p>The average typing speed is around 40 WPM. A speed of 60-80 WPM is considered above average and sufficient for most professional work. Speeds above 80 WPM are considered fast, and professional typists often reach 100+ WPM. The world record for typing speed is over 200 WPM.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How is WPM calculated?</h3>
+        <p>WPM (Words Per Minute) is calculated using the standard formula where every 5 characters count as one word. Gross WPM equals total characters typed divided by 5, divided by minutes elapsed. Net WPM subtracts errors from the gross WPM to give your effective typing speed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I practice typing code?</h3>
+        <p>Yes! freetypingtest.app includes a dedicated Code mode featuring programming snippets in JavaScript, Python, CSS, HTML, and SQL. This mode includes common syntax like brackets, semicolons, arrow functions, and other programming characters to help developers improve their coding speed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does freetypingtest.app save my results?</h3>
+        <p>Yes, your results are saved locally in your browser using localStorage. This includes your personal best scores per duration and mode, and a history of your last 50 tests. No data is ever sent to any server — everything stays on your device.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use freetypingtest.app on mobile?</h3>
+        <p>While freetypingtest.app is mobile responsive and works on phones and tablets, typing tests are inherently designed for physical keyboards. For the best and most accurate experience, we recommend using a desktop or laptop computer with a physical keyboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

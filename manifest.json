@@ -1,0 +1,17 @@
+{
+  "name": "freetypingtest.app",
+  "short_name": "Typing Test",
+  "description": "Free online typing speed test. Measure WPM, accuracy, and consistency. No login, no tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#C49A2A",
+  "categories": ["education", "utilities"],
+  "icons": [
+    {
+      "src": "/og-image.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

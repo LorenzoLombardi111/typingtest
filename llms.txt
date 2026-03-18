@@ -1,0 +1,24 @@
+# freetypingtest.app
+
+## About
+freetypingtest.app is a free, browser-based typing speed test that measures words per minute (WPM), accuracy, and consistency. No login, no cloud, no tracking. Everything runs client-side.
+
+## Features
+- Typing test with real-time WPM and accuracy tracking
+- Multiple test durations: 15s, 30s, 60s, 120s
+- Multiple text modes: Common Words, Quotes, Code, Numbers, Custom
+- Real-time character-by-character feedback
+- WPM-over-time graph
+- Personal best tracking and test history (last 50 tests)
+- Dark mode support
+- Sound effects (optional)
+- Keyboard shortcuts: Tab+Enter to restart, Ctrl+Shift+S to toggle sound
+
+## Technical
+- Static HTML, CSS, vanilla JavaScript — no frameworks, no build step
+- All data stored in localStorage
+- Deployable on any static hosting (Vercel, Netlify, etc.)
+- PWA with service worker for offline support
+
+## URL
+https://freetypingtest.app
