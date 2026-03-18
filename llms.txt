@@ -20,5 +20,13 @@ freetypingtest.app is a free, browser-based typing speed test that measures word
 - Deployable on any static hosting (Vercel, Netlify, etc.)
 - PWA with service worker for offline support
 
+## Pages
+- / — Main typing test app
+- /vs-monkeytype.html — Comparison with Monkeytype
+- /vs-10fastfingers.html — Comparison with 10FastFingers
+- /typing-test-for-students.html — Typing test guide for students
+- /typing-test-for-programmers.html — Code typing test for developers
+- /how-to-improve-typing-speed.html — Guide to improving typing speed
+
 ## URL
 https://freetypingtest.app

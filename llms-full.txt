@@ -1,0 +1,76 @@
+# freetypingtest.app — Full Documentation
+
+## About
+freetypingtest.app is a free, browser-based typing speed test that measures words per minute (WPM), accuracy, and consistency. No login, no cloud, no tracking. Everything runs client-side in the browser using vanilla HTML, CSS, and JavaScript.
+
+## Core Features
+- Typing test with real-time WPM and accuracy tracking
+- Multiple test durations: 15s, 30s, 60s (default), 120s
+- Multiple text modes: Common Words, Quotes, Code, Numbers, Custom
+- Real-time character-by-character feedback with color-coded states
+- WPM-over-time line chart rendered as inline SVG
+- Personal best tracking per duration and mode (localStorage)
+- Test history for the last 50 tests (localStorage)
+- Statistics dashboard: average WPM, best WPM, average accuracy, tests completed, total time
+- Dark mode toggle (persisted as suite_theme in localStorage)
+- Sound effects: key click, error, test complete (Web Audio API, optional)
+- Font size selector: 18px, 24px, 30px
+- Keyboard shortcuts: Tab+Enter to restart, Ctrl/Cmd+Shift+S to toggle sound
+- Auto-start on first keypress (no start button)
+- Paste disabled during tests
+- Hidden input field captures keystrokes without visible textarea
+- Smooth text scrolling when content wraps past 3 visible lines
+- PWA with service worker for offline support
+
+## Text Content
+- Common Words mode: ~800 most common English words, randomly arranged per test
+- Quotes mode: 50 famous quotes and literature excerpts with attribution
+- Code mode: 45 programming snippets in JavaScript, Python, CSS, HTML, SQL
+- Numbers mode: random phone numbers, IP addresses, dates, currency, mixed digits
+- Custom mode: user-provided text via textarea
+
+## WPM Calculation
+- Gross WPM = (total characters typed / 5) / minutes elapsed
+- Net WPM = Gross WPM - (errors / minutes elapsed), minimum 0
+- Standard: 5 characters = 1 word
+- Accuracy = (correct characters / total typed) × 100
+- Consistency = 100 - (stdev of per-second WPM / average WPM × 100)
+
+## Technical Stack
+- Static HTML, CSS, vanilla JavaScript — no frameworks, no build step
+- All data stored in localStorage (no server, no cookies, no analytics)
+- Fonts: DM Sans (UI), Lora (body), JetBrains Mono (typing display) via Google Fonts
+- Design system: CSS custom properties for light/dark themes
+- Deployable on any static hosting (Vercel, Netlify, GitHub Pages, etc.)
+
+## Pages
+
+### / — Main App
+The typing test application. Single-page app with test screen, results screen, history drawer, and SEO content section below the fold.
+
+### /vs-monkeytype.html — freetypingtest.app vs Monkeytype
+Comparison page. Acknowledges Monkeytype's strengths (open source, highly customizable, large community, many themes, advanced stats). Positions freetypingtest.app as simpler and more approachable. Includes comparison table and FAQ.
+
+### /vs-10fastfingers.html — freetypingtest.app vs 10FastFingers
+Comparison page. Acknowledges 10FastFingers' strengths (multiplayer, competitions, multiple languages). Positions freetypingtest.app as cleaner UI, ad-free, better analytics. Includes comparison table and FAQ.
+
+### /typing-test-for-students.html — Free Typing Test for Students
+Educational page targeting students. Covers why typing speed matters for school, speed benchmarks by age, practice routines, and how to use freetypingtest.app for improvement tracking. Includes FAQ.
+
+### /typing-test-for-programmers.html — Free Typing Test for Programmers
+Educational page targeting developers. Covers why typing speed matters for coding, how code typing differs from prose, what the Code mode includes, and how to use Custom mode for targeted practice. Includes FAQ.
+
+### /how-to-improve-typing-speed.html — How to Improve Your Typing Speed
+Educational guide with evidence-based tips: touch typing, accuracy first, stop looking at keyboard, daily practice, incremental goals, varied practice. Includes realistic improvement timelines and common mistakes. Includes FAQ.
+
+## SEO
+- Each page has unique title, meta description, canonical URL, OG tags
+- Structured data: Article, FAQPage, SoftwareApplication, BreadcrumbList (JSON-LD)
+- FAQ answers in JSON-LD match HTML content exactly
+- Single H1 per page
+- Meta descriptions under 155 characters
+- sitemap.xml includes all pages
+- robots.txt allows all crawlers
+
+## URL
+https://freetypingtest.app
