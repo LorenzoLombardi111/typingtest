@@ -6,6 +6,7 @@ const ASSETS = [
   '/app.js',
   '/manifest.json',
   '/og-image.svg',
+  '/favicon.svg',
   '/vs-monkeytype.html',
   '/vs-10fastfingers.html',
   '/typing-test-for-students.html',

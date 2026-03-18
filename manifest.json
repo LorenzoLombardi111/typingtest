@@ -9,6 +9,12 @@
   "categories": ["education", "utilities"],
   "icons": [
     {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
       "src": "/og-image.svg",
       "sizes": "any",
       "type": "image/svg+xml"
