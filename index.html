@@ -8,11 +8,11 @@
 <meta name="theme-color" content="#C49A2A">
 <meta property="og:title" content="Free Typing Speed Test Online | freetypingtest.app">
 <meta property="og:description" content="Free online typing speed test. Measure WPM, accuracy, and consistency. Multiple modes, detailed stats. No login, no tracking.">
-<meta property="og:image" content="/og-image.svg">
-<meta property="og:url" content="https://freetypingtest.app">
+<meta property="og:image" content="https://freetypingtest.app/og-image.svg">
+<meta property="og:url" content="https://freetypingtest.app/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://freetypingtest.app">
+<link rel="canonical" href="https://freetypingtest.app/">
 <link rel="manifest" href="/manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,14 +159,14 @@
         <div class="text-display" id="textDisplay"></div>
         <div class="focus-hint" id="focusHint">Click here or start typing</div>
       </div>
-      <input type="text" id="hiddenInput" class="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="text" id="hiddenInput" class="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Typing input">
     </div>
 
     <!-- Start Prompt -->
     <div class="start-prompt" id="startPrompt">Start typing to begin the test</div>
 
     <!-- Live Stats -->
-    <div class="live-stats" id="liveStats">
+    <div class="live-stats" id="liveStats" aria-live="polite">
       <div class="live-stat">
         <span class="live-stat-value" id="liveWpm">0</span>
         <span class="live-stat-label">WPM</span>

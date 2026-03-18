@@ -1,11 +1,16 @@
-const CACHE_NAME = 'typingtest-v1';
+const CACHE_NAME = 'typingtest-v2';
 const ASSETS = [
   '/',
   '/index.html',
   '/style.css',
   '/app.js',
   '/manifest.json',
-  '/og-image.svg'
+  '/og-image.svg',
+  '/vs-monkeytype.html',
+  '/vs-10fastfingers.html',
+  '/typing-test-for-students.html',
+  '/typing-test-for-programmers.html',
+  '/how-to-improve-typing-speed.html'
 ];
 
 self.addEventListener('install', e => {

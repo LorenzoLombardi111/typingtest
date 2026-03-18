@@ -492,6 +492,11 @@ function setupEventListeners() {
     localStorage.setItem('tt_mobileDismissed', 'true');
   });
 
+  // Escape to close history drawer
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeHistory();
+  });
+
   // Ctrl/Cmd+Shift+S for sound
   document.addEventListener('keydown', e => {
     if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'S') {
